@@ -1,0 +1,31 @@
+.carouselImageContainer {
+	height: 300px;
+	position: relative;
+}
+
+.carouselImage {
+	object-fit: cover;
+	object-position: top;
+}
+
+.clickableOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slickSlide {
+	pointer-events: none;
+}
+
+.slickArrow {
+	pointer-events: auto;
+}

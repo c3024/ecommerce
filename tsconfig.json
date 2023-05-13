@@ -1,0 +1,47 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"paths": {
+			"@/*": ["./*"]
+		},
+		"noUnusedLocals": false,
+		"noUnusedParameters": false
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"pages/automotive.jsx",
+		"pages/_app.tsx",
+		"components/OfferCard.tsx",
+		"components/SearchBar.tsx",
+		"components/NavBar.tsx",
+		"components/SlickCarousel.tsx",
+		"components/OfferCardChild.tsx",
+		"lib/useAuth.ts",
+		"components/Product.tsx",
+		"components/AutoComplete.tsx",
+		"[id].tsx",
+		"__tests__/AutoComplete.test.js",
+		"__tests__/NavBar.test.js",
+		"__tests__/SearchIconComponent.test.js",
+		"__tests__/ProductResults.test.js",
+		"__tests__/NavBarUserCart.test.js",
+		"__tests__/NavBar.test.js",
+		"__tests__/Product.test.js"
+	],
+	"exclude": ["node_modules"]
+}
