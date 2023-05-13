@@ -72,18 +72,11 @@ function Checkout() {
 					userId = querySnapshot.docs[0].id;
 				}
 				const ordersRef = usersRef.doc(userId).collection("orders");
-				ordersRef
-					.add({
-						...data,
-						id: uuidv4(),
-						date: new Date(),
-					})
-					.then((docRef) => {
-						console.log("Order placed with ID: ", docRef.id);
-					})
-					.catch((error) => {
-						console.error("Error adding document: ", error);
-					});
+				ordersRef.add({
+					...data,
+					id: uuidv4(),
+					date: new Date(),
+				});
 			});
 			setIsOrderPlaced(true);
 			setIsOrderFailed(false);

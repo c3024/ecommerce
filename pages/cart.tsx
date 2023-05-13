@@ -24,8 +24,6 @@ export const getCartTotal = (cartItems: CartItem[]) =>
 
 const CartPage = () => {
 	const { cartItems, setCartItems } = useContext(CartDetailsContext);
-	console.log("cartItems");
-	console.log(cartItems);
 	const handleQuantityChange = (productId: string, newQuantity: number) => {
 		if (newQuantity < 1)
 			return setCartItems((prevCartItems) =>
@@ -67,7 +65,6 @@ const CartPage = () => {
 			<div className="flex flex-col mr-2 ml-2">
 				<h1 className="text-4xl mb-12 mt-12 ml-2">Shopping Cart</h1>
 				{cartItems.map((cartItem) => {
-					console.log(cartItem.CollectionName);
 					if (cartItem.quantity > 0) {
 						return (
 							<div
