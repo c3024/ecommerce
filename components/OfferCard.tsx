@@ -22,12 +22,14 @@ const OfferCard = function ({
 			<div className="flex flex-wrap justify-around gap-x-5">
 				{childCards.map((childCard) => {
 					return (
-						<Link
-							key={childCard[0]}
-							href={`/${cardCategory}/categories/${childCard[0]}`}
-						>
-							<OfferCardChild image={childCard[1]} description={childCard[0]} />
-						</Link>
+						<div key={childCard[0]} className="mb-8">
+							<Link href={`/${cardCategory}/categories/${childCard[0]}`}>
+								<OfferCardChild
+									image={childCard[1]}
+									description={childCard[0]}
+								/>
+							</Link>
+						</div>
 					);
 				})}
 			</div>
