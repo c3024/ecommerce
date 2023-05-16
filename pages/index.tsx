@@ -9,8 +9,10 @@ export default function Home() {
 			<Head>
 				<title>Online Shopping on Amazon</title>
 			</Head>
-			<SlickCarousel />
-			<OfferCardLayout />
+			<div className="max-w-7xl m-auto">
+				<SlickCarousel />
+				<OfferCardLayout />
+			</div>
 		</>
 	);
 }
