@@ -22,7 +22,7 @@ export default function SlickCarousel() {
 	return (
 		<div>
 			<Slider {...settings} className={styles.slider}>
-				<div className="pointer-events-none">
+				<div className="pointer-events-none text-center">
 					<Image
 						src={millionProducts.src}
 						alt=""
