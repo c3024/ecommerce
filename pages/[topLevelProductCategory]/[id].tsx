@@ -87,13 +87,13 @@ const ProductPage = function ({ productDetails }: ProductPageProps) {
 			</Head>
 			<div className="flex flex-col md:flex-row gap-y-2 p-2 items-start ml-auto mr-auto md:ml-0 md:mr-auto">
 				<Image
-					className="w-96 h-96 object-cover self-center md:self-start"
+					className="w-96 h-96 object-cover self-center md:self-start rounded-lg"
 					width={576}
 					height={576}
 					src={placeHolderImage.src}
 					alt="No image"
 				/>
-				<div className=" text-black gap-x-1 h-auto grow p-2">
+				<div className=" text-black gap-x-1 h-auto grow p-2 ml-2">
 					<h1 className="text-2xl font-bold">{productDetails.Title}</h1>
 					<p className="mb-2">{productDetails.Brand}</p>
 					<h2 className="text-xl font-bold">{productDetails.ListPrice}</h2>
